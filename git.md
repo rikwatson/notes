@@ -21,15 +21,35 @@ A/C Create on [GitLab](https://gitlab.com/), `rikwatson`.
 
 Get workflow for a single developer sorted & documents the small subset of commands I need to learn.
 
-{% gist 4ce803bf885cff93440691e95e76e05f %}
+```bash
+mkdir ./repositry
+cd ./repositry
+git init
+git config user.name "Rik Watson"
+git config user.email "rik@plancd.com"
+```
 
 ## Ultra Basic Workflow
 
-{% gist faac18d530c31be6e78a611f8b3f6d71 %}
+```bash
+git init
+git Add -A
+git commit -m "Initial commit
+git remote add origin get@github.com:rikwatson/repo-name.git
+git push -u origin master
+# Do some real work.
+git add changed.file another_changed.file
+git commit -m "suitable comment"
+get push -u origin master
+```
 
 ## Shallow clone
 
-{% gist 99ec9945a3920a57a0ac829eb1974e0a %}
+```bash
+# To clone repo foo.git with branch bar do:
+
+git clone --depth 1 https://path/to/repo/foo.git -b bar
+```
 
 ## Passwords
 
@@ -43,7 +63,7 @@ machine github.com
 
 ## Nice log output for HockeyApp etc
 
-```
+```bash
 git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT'] || 'HEAD^^^^^'}..HEAD
 git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{$GIT_PREVIOUS_SUCCESSFUL_COMMIT || 'HEAD^^^^^'}..HEAD
 git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit e4a01444630800f7a2f936683805622633a2c206...HEAD
@@ -81,7 +101,10 @@ Which is odd, I would have expected a simple `git pull` to work.
 
 ## Getting nice release notes from git in [jenkins](/jenkins)
 
-{% gist e97317f24936d5d321954311ce36299c %}
+```bash
+git fetch --unshallow
+git log --merges  --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT']}..HEAD | grep " - Merge pull request "
+```
 
 ## Reading List
 
@@ -104,7 +127,7 @@ For CI reasons it's useful to have a read-only fork of a repositry which is kept
 
 ## Terminology
 
-{% gist 14d11d778b7c2e5194533da2c325e608 %}
+[Git Terminology](./git.terminology.md)
 
 ## Mirroring a repo 
 
