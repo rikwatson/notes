@@ -14,8 +14,6 @@ Listen to [this](http://mobilecouch.co/95) from MobileCouch.
 
  * [how-to-find-out-the-most-popular-repositories-on-github](http://stackoverflow.com/questions/19855552)
  * Git [Cheatsheet](https://medium.freecodecamp.com/git-cheat-sheet-and-best-practices-c6ce5321f52#.v01okb91y)
- 
-A/C Create on [GitLab](https://gitlab.com/), `rikwatson`.
 
 ![](./git-xkcd.png)
 
@@ -137,12 +135,16 @@ Not cloning.
  * http://stackoverflow.com/questions/11370239/creating-an-official-github-mirror
  * http://stackoverflow.com/questions/15871787/automatically-mirroring-a-github-repo
  * https://github.com/beefsack/git-mirror
- 
+
+## Password caching
+
+On MacOS, take a look [here](https://help.github.com/articles/caching-your-github-password-in-git/), basicall `git config --global credential.helper osxkeychain`
+
 ----
 
 [Setup github][setup]
 
-I'm [rikwatson on](https://github.com/rikwatson) GitHub. 
+I'm [rikwatson on](https://github.com/rikwatson) GitHub & A/C Create on [GitLab](https://gitlab.com/), also `rikwatson`
 
  * An introdction to Git [Hooks][hooks].
  * [GitHub cheatsheet][cheetsheet]
