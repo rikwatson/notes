@@ -2,5 +2,4 @@
 
 Explained in one diagram care of the internet. 
 
-![](.
-/decoy-pricing.jpg)
+![](./decoy-pricing.jpg)
