@@ -11,6 +11,13 @@
  * [Effective](https://golang.org/doc/effective_go.html) Go
  * Go [Best Proctices 2016](https://peter.bourgon.org/go-best-practices-2016/)
 
+
+## Links to amalgimate
+
+ * [Peter Bourgon](https://usesthis.com/interviews/peter.bourgon/)
+ * [Go Best practices](https://peter.bourgon.org/go-best-practices-2016/)
+ * [Go + Microservices](https://peter.bourgon.org/applied-go-kit/#1)
+
 ## Installation
 
 Follow macOS instructions [here](https://golang.org/doc/install).
@@ -44,6 +51,38 @@ $ echo 'export GOPATH=$HOME' >> $HOME/.profile
 $ source $HOME/.profile
 $ go env | grep GOPATH
 GOPATH="/Users/myusername"
+```
+
+
+
+```bash
+export GOPATH=~/Dropbox/go
+mkdir -p $GOPATH
+cd $GOPATH
+mkdir -p $GOPATH/src
+mkdir -p $GOPATH/src/github.com/raul
+mkdir -p $GOPATH/src/github.com/raul/hello-go
+cd !$
+wget https://gist.github.com/raul/c168e41b78e23414c3b0/raw/hello.go
+cat hello.go
+go install . # No output means a successful compilation
+ls $GOPATH/bin
+$GOPATH/bin/hello-go
+export PATH=$GOPATH/bin:$PATH  ####### < Add this TODO
+mkdir -p $GOPATH/src/github.com/raul/hello-package
+cd !$
+wget https://gist.github.com/raul/345d9443b97ac394f590/raw/hello.go
+cat hello.go
+go build .
+go install .
+ls $GOPATH/pkg/darwin_amd64/github.com/raul/hello-package.a
+
+cd $GOPATH/src/github.com/raul/hello-go
+wget -N https://gist.github.com/raul/9e46c9f1d6e4bcd9df96/raw/hello.go
+cat hello.go
+
+go install .
+hello-go
 ```
 
 ## JSON & Go
