@@ -1,17 +1,12 @@
----
-layout: post
-title:  "Visual Studio Code"
-categories: none
-permalink: /vscode
----
+# Visual Studio Code
 
-# c.f.
+_c.f._
 
  * [ToM](http://taoofmac.com/space/apps/Visual%20Studio%20Code)
 
 My default settings are:
 
-```
+```json
 // Place your settings in this file to overwrite the default settings
 {
     "workbench.colorTheme": "Solarized Light",
@@ -38,4 +33,3 @@ My default settings are:
 `<CTRL-P> ext install vscode-solarized`, then ` File > Preferences > Color Theme. (Code > Preferences > Color Theme on Mac)`
 
 Some [notes](https://calebmcelrath.wordpress.com/2017/02/01/thankful-for-integrated-terminals-in-visual-studio-code/) on Terminal.
-
