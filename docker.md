@@ -2,9 +2,12 @@
 
 And its use in a Mobile CI environment
 
+ * Docker.[macOS](./docker.macos.md)
+ * Docker.[Android](./docker.android.md), using Docker for Android testing
+
 Docker is stateless, so where do we store our state? And indeed what is the state.
 
-Need a Mobile CI (mCI) workflow for code & testing which outlines all th eO/P's and whatever state is needed.
+Need a Mobile CI (mCI) workflow for code & testing which outlines all the O/P's and whatever state is needed.
 
 Only have one build -> `xxx.apk`, but we have _many_ test environments.
 
@@ -24,10 +27,6 @@ Only have one build -> `xxx.apk`, but we have _many_ test environments.
  * [Using Docker as a Jenkins Cloud Provider](http://www.nuxeo.com/blog/docker-jenkins-cloud-provider/)
  * [Jenkins + Docker = Awesome CI](https://www.theguild.nl/jenkins-docker-awesome-ci)
  * [Jenkins For Android CI](https://hub.docker.com/r/ocasta/android-jenkins/)
-
-## Android, Jenkins & Docker
-
- * [Using Docker for Android testing](/docker_android)
  
 ## c.f.
 

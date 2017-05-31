@@ -3,7 +3,7 @@
 c.f.
 
  * [General](./docker.md) information
- * Use Docker for [Android CI](./docker_andorid)
+ * Use Docker for [Android CI](./docker.andorid.md)
 
 We use [Docker for Mac](https://docs.docker.com/docker-for-mac/), older Mac's may need [Docker Toolbox](https://www.docker.com/products/docker-toolbox), but that's not discussed further here.
 
