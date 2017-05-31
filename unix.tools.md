@@ -1,21 +1,10 @@
-# Unix Command Line Tools
+# Unix Tools
 
-## bash
+ * [Unix](./unix.md), in general
+ * Unix [File Processing](./unix.file_processing.md)
+ * Unix [Tools](./unix.tools.md)
+ * Unix [Bash](./unix.bash.md)
 
- * [The Art of the Command Line](https://github.com/jlevy/the-art-of-command-line)
- * [Tips](http://www.doknowevil.net/2010/10/23/tips-for-using-bash-in-the-linux-terminal-part-1/)
-
-### File name extraction
-
-{% gist 405c13943dff1f6410c35ad01cc4559b %}
-
-
-### Run in same directory
-
-{% gist 16500c65c387daf03b383a721539b898 %}
-
-
-But this won't work if there are spaces in the directory spec.
 
 ## `uname` System Info
 
