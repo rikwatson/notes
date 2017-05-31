@@ -12,6 +12,42 @@ Though, oddly enough, [not](http://timelessrepo.com/json-isnt-a-javascript-subse
 
 JSON can't include comments, but you can pre-process with JSmin to remove them.
 
+```bash
+#!/bin/bash -l
+#
+# Install JSmin
+#
+brew install jsmin
+
+# Some JSON with a comment..
+
+cat << EOF > ./jsonWithComments.json
+{
+  "My Beta":                "DEADBEEF2116aecbaefe18d98171e2c",  // This is a comment
+  "My Commerce Nightly":    "6DEADBEEF771248cba6aff5f4c972c779",
+  "My Commerce Test":       "DEADBEEFe7df43cfaad8fa81f2eaba39",
+  "My Experience Nightly":  "DEADBEEFc5dd45ee8d52e0019f0752be",
+  "My Experience Test":     "DEADBEEF34ec5133ab2df8adc22d0ae7", // Another (Illegal) comment
+  "My Nightly":             "DEADBEEF7485072eada656d6125682f8",
+  "My Test":                "DEADBEEF5c11a4990aad6cf8f1c476df"
+}
+EOF
+
+echo "JSON with comments"
+
+cat ./jsonWithComments.json
+
+cat ./jsonWithComments.json | jsmin > ./jsonWithoutCommenets.json
+
+echo "JSON without comments"
+
+cat ./jsonWithoutCommenets.json
+
+echo "Make it pretty (again)"
+
+cat ./jsonWithoutCommenets.json | python -mjson.tool 
+```
+
 # Verification
 
 Use `python -mjson.tool` for basic JSON verificationa and pretty printing.
