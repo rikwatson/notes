@@ -2,6 +2,8 @@
 
 Made all the more relavent by the arrival of [.Net Core](./netcore) and Visual Studio for Mac.
 
+ * C#[.inferfaces](./csharp.interfaces.md)
+ 
 # Resouces
 
 * [Free Books](http://www.readwriteweb.com/hack/2011/05/free-e-books-on-c.php), [Yellow](http://www.csharpcourse.com/), [Blue](http://www.csharpcourse.com/)
