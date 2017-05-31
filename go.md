@@ -1,5 +1,8 @@
 #  The Go Programming Language
 
+ * Go Installation & [setup](./go.setup.md)
+ * Go [Tooling](./go.tooling.md)
+
 ## cf
 
  * [ToM](http://taoofmac.com/space/dev/Golang)
