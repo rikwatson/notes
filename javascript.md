@@ -1,27 +1,24 @@
 # JavaScript: The 'J' in AJAX
 
-Cf. [TypeScript](./typescript.md)
+Cf. [TypeScript](./typescript.md) & [ES2015](http://babeljs.io/learn-es2015/)
 
-<ul>
-<li><a href="http://www.webcodr.com/6/15-javascript-snippets-you-cant-live-without/">Snippets</a> 15 Snippets you can't live without</li>
-<li><a href="http://www.guru4.net/articoli/javascript-soap-client/demo/en.aspx">SOAP</a>Demo of using SOAP with JS</li>
-<li><a href="http://www.cryer.co.uk/resources/javascript/script3.htm">Images</a> How to control the load order</li>
-</ul>
+ * [Snippets](http://www.webcodr.com/6/15-javascript-snippets-you-cant-live-without/) 15 Snippets you can't live without
+ * [SOAP](http://www.guru4.net/articoli/javascript-soap-client/demo/en.aspx) Demo of using SOAP with JS
+ * [Images](http://www.cryer.co.uk/resources/javascript/script3.htm) How to control the load order
+
 
 # Frameworks
 
-<ul>
-<li><a href="http://www.sproutcore.com/demos/">SproutCore</a></li>
-<li><a href="http://stanlemon.net/projects/jquery-templates.html">JQuery</a>Using the template</li>
-</ul>
+ * [SproutCore](http://www.sproutcore.com/demos/)
+ * [JQuery](http://stanlemon.net/projects/jquery-templates.html) Using the template
 
-#JScript - WSH
 
-<ul>
-<li><a href="http://cwashington.netreach.net/main/default.asp?topic=links">Win32 Scripting</a></li>
-<li><a href="http://www.winscripter.com/">Winscripter</a></li>
-<li><a href="http://articles.techrepublic.com.com/5100-10878_11-1056451.html">VBscript &amp; JScript</a></li>
-</ul>
+# JScript - WSH
+
+ * [Win32 Scripting](http://cwashington.netreach.net/main/default.asp?topic=links)
+ * [Winscripter](http://www.winscripter.com/)
+ * [VBscript & JScript](http://articles.techrepublic.com.com/5100-10878_11-1056451.html)
+
 
 # Better documentation via Markdown
 
@@ -96,7 +93,7 @@ It's been ages since I read this book, and so I confess that I donít have a str
 
 ## GAE
 
-Look at logs [here](https://appengine.google.com).
+Look at logs [here](https://appengine.google.com) also [GAE](./gae.md).
 
 ## log4javascript
 
@@ -110,7 +107,3 @@ An Ajax [example](http://log4javascript.org/demos/ajax.html).
 
 [StackOverflow](http://stackoverflow.com/questions/2825640/log-client-side-errors-to-the-server) example.
 
-Some useful GAE links:
-
-* [Logging Events](http://code.google.com/appengine/articles/logging.html)
-* [Handling Forms](http://code.google.com/appengine/docs/python/gettingstarted/handlingforms.html)

@@ -5,7 +5,6 @@ Almost as much use as gmail.
 ## My use of GAE
 
 * [Admin Console](https://appengine.google.com)
-
 * http://www.phonegap-app.com http://phonegap-app.appspot.com/ 
 * http://konductor-app.appspot.com/ http://www.konductor-app.com/ 
 
@@ -34,7 +33,7 @@ favicon's were created [here](http://tools.dynamicdrive.com/favicon/)
 <li><a href="http://code.google.com/appengine/articles/quotas.html">Quotas</a></li>
 <li><a href="http://code.google.com/appengine/docs/webapp/requesthandlers.html">Request Handlers</a></li>
 <li><a href="http://www.niallkennedy.com/blog/2008/07/app-engine-optimization.html">Optimizing</a></li>
-<li><a href="http://popcnt.org/search/label/GoogleAppEngine">Tips &amp; Tricks</a>Forth a read</li>
+<li><a href="http://popcnt.org/search/label/GoogleAppEngine">Tips &amp; Tricks</a>worth a read</li>
 <li><a href="http://www.ipsojobs.com/blog/2008/06/17/how-to-create-a-simple-but-powerful-cdn-with-google-app-engine-gae/">CDN 1 or 2</a></li>
 <li><a href="http://www.coderjournal.com/2008/06/turn-google-app-engine-into-a-content-delivery-network-cdn/"></a>CDN 2 of 2</li>
 <li><a href="http://code.google.com/appengine/docs/datastore/creatinggettinganddeletingdata.html">Datastore</a> Creating, accessing &amp; deleting stuff.<br/>
@@ -42,3 +41,8 @@ favicon's were created [here](http://tools.dynamicdrive.com/favicon/)
 <li><a href="http://code.google.com/appengine/articles/">Articles</a> misc.</li>
 <li></li>
 </ul>
+
+Some useful GAE links:
+
+* [Logging Events](http://code.google.com/appengine/articles/logging.html)
+* [Handling Forms](http://code.google.com/appengine/docs/python/gettingstarted/handlingforms.html)
