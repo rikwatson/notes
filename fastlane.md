@@ -1,5 +1,9 @@
 # Fastlane
 
+## Overview
+
+[Fastlane](https://github.com/fastlane) is a set of CI tools to help build, test and deploy Android and iOS on macOS.
+
 ## Install
 
 First install Xcode (From the Mac App Store), then install the Xcode command line tools via:
@@ -9,7 +13,7 @@ First install Xcode (From the Mac App Store), then install the Xcode command lin
 xcode-select --install
 ```
 
-After Xcode & it's tools have been installed, `fastlane` itself can be installed (as a Gem).
+After Xcode & its tools have been installed, `fastlane` itself can be installed (as a Gem).
 
 ```bash
 sudo gem install fastlane --verbose
@@ -18,7 +22,11 @@ gem cleanup
 
 ## Updates
 
-Fastlane
+Fastlane if frequently updated, so it's worth checking for updates often
+
+```bash
+sudo gem update fastlane
+```
 
 
 TODO: `gym --use_legacy_build_api`
