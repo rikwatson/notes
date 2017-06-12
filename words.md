@@ -1,9 +1,4 @@
----
-layout: post
-title:  "Word of the day"
-categories: misc
-permalink: /words
----
+# Word of the day
 
 c.f. [Quotes](./quotes.md)
 
