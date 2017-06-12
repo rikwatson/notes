@@ -6,6 +6,8 @@
 
 ## Install
 
+### Xcode
+
 First install Xcode (From the Mac App Store), then install the Xcode command line tools via:
 
 
@@ -13,21 +15,113 @@ First install Xcode (From the Mac App Store), then install the Xcode command lin
 xcode-select --install
 ```
 
-After Xcode & its tools have been installed, `fastlane` itself can be installed (as a Gem).
+### Install from a download
+
+[here](https://download.fastlane.tools)
+
+Just ignore all the cruff below about using homebrew etc as an SSL issue with Apple / Perl will cause you pain.
+
+
+### IGNORE: Homebrew
+
+After Xcode & its tools have been installed, `homebrew` (a package manager) can be installed.
+See [this](./homebrew.md) for more notes on Homebrew. TL;DR -
 
 ```bash
-sudo gem install fastlane --verbose
-gem cleanup
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## Updates
+### IGNORE: Fastlane
+
+Finally, `fastlane` itself can be installed (from `homebrew`).
+
+```bash
+brew update
+brew cask install fastlane
+```
+
+## IGNORE: Updates
 
 Fastlane if frequently updated, so it's worth checking for updates often
 
 ```bash
-sudo gem update fastlane
+brew update
 ```
 
+## Fastlane match
+
+[`match`](https://github.com/fastlane/fastlane/tree/master/match) is the tool we use here for code signing.
+
+We already have the necessary Git repo stored [here](https://bitbucket.org/rikwatson_taap/fastlane), contact [me](mailto:rik.watson@ontaap.com) if you need access - you'll also need the PassPhrase.
+
+
+```
+fastlane match development
+
++-----------------------+----------------+
+|        Summary for match 2.37.0        |
++-----------------------+----------------+
+| type                  | development    |
+| git_branch            | master         |
+| keychain_name         | login.keychain |
+| readonly              | false          |
+| verbose               | false          |
+| force                 | false          |
+| skip_confirmation     | false          |
+| shallow_clone         | false          |
+| clone_branch_directly | false          |
+| force_for_new_devices | false          |
+| skip_docs             | false          |
+| platform              | ios            |
++-----------------------+----------------+
+
+[08:10:11]: To not be asked about this value, you can specify it using 'git_url'
+[08:10:11]: URL to the git repo containing all the certificates: https://bitbucket.org/rikwatson_taap/fastlane
+[08:10:19]: Cloning remote git repo...
+[08:10:19]: If cloning the repo takes too long, you can use the `clone_branch_directly` option in match.
+[08:10:21]: 🔓  Successfully decrypted certificates repo
+[08:10:21]: To not be asked about this value, you can specify it using 'username'
+[08:10:21]: Your Apple ID Username: rik@plancd.com
+[08:10:30]: Verifying that the certificate and profile are still valid on the Dev Portal...
+[08:10:32]: To not be asked about this value, you can specify it using 'app_identifier'
+[08:10:32]: The bundle identifier(s) of your app (comma-separated):
+[08:14:12]: Couldn't find a valid code signing identity in the git repo for development... creating one for you now
+
++---------------+--------------------------------------+
+|               Summary for cert 2.37.0                |
++---------------+--------------------------------------+
+| development   | true                                 |
+| force         | true                                 |
+| username      | rik@plancd.com                       |
+| keychain_path | /Users/rik/Library/Keychains/login.  |
+|               | keychain-db                          |
+| platform      | ios                                  |
++---------------+--------------------------------------+
+
+[08:14:12]: Starting login with user 'rik@plancd.com'
+[08:14:14]: Successfully logged in
+[08:14:16]: Successfully generated 72EARVT24D which was imported to the local machine.
+[08:14:17]: Verifying the certificate is properly installed locally...
+[08:14:17]: Successfully installed certificate 72EARVT24D
+[08:14:18]: 🔒  Successfully encrypted certificates repo
+[08:14:18]: Pushing changes to remote git repo...
+[08:14:20]: All required keys, certificates and provisioning profiles are installed 🙌
+```
+
+All done :-)
+
+
+### But it'a all broken
+
+If things are really bad, delete everything (certificate wise) and start again -
+
+```bash
+fastlane match nuke development
+```
+
+
+
+----
 
 TODO: `gym --use_legacy_build_api`
 
