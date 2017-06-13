@@ -15,6 +15,7 @@ List of homebrew components installed as part of my standard Mac build
 ```text
 jq
 fastlane
+httpie
 ```
 
    * brew install carthage
