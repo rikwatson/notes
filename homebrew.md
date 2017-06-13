@@ -1,10 +1,20 @@
 # Homebrew
 
+[Homebrew](https://brew.sh/) is a simple package manager for macOS.
+
+## Installation
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+## Stuff I use
+
 List of homebrew components installed as part of my standard Mac build
 
 ```text
 jq
-
+fastlane
 ```
 
    * brew install carthage
