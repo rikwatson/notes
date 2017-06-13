@@ -15,8 +15,14 @@ npm install @angular/{common,compiler,compiler-cli,core,forms,http,platform-brow
 
 Now upgrade all global packages.
 
-```
+```bash
 npm update -g 
+```
+
+or
+
+```bash
+npm i -g npm
 ```
 
 ```
@@ -31,6 +37,12 @@ npm show express version
 
 ```
 npm install @angular/{common,compiler,compiler-cli,core,forms,http,platform-browser,platform-browser-dynamic,platform-server,router,animations}@latest typescript@latest --save
+ng build --prod --aot
+```
+
+## Building
+
+```bash
 ng build --prod --aot
 ```
 
