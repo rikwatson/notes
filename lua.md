@@ -26,6 +26,8 @@ Install via, `brew install lua`.
 
  * [API](https://luac.mtasa.com/api/)
 
+Need to embed `luac` into something or other. i.e. a Lua bytecode compiler.
+
 ## Reading The Code
 
 Recommended reading order:
