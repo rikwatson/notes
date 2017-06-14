@@ -30,6 +30,9 @@ Based on conversation with Russell Seymore (ASOS, now Chef) & Satheesh Thrikovil
 * [ExploringAzureFunctions](https://www.hanselman.com/blog/WhatIsServerlessComputingExploringAzureFunctions.aspx)
 * [MSDN Artice](https://visualstudiomagazine.com/articles/2017/04/01/azure-functions.aspx)
 
+# Azure Cosmos DB
+
+* MS [Introduction](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
 
 # Azure Resource Manager / ARM
 
