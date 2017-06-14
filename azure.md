@@ -23,6 +23,14 @@ Based on conversation with Russell Seymore (ASOS, now Chef) & Satheesh Thrikovil
  * [Azure Subscription and Service Limits, Quotas, and Constraints](https://azure.microsoft.com/en-gb/documentation/articles/azure-subscription-service-limits/)
  * Comparison between the v1 and v2 resources in Azure [Azure Compute, Network & Storage Providers under the Azure Resource Manager](https://azure.microsoft.com/en-gb/documentation/articles/virtual-machines-azurerm-versus-azuresm/)
 
+# Serverless
+
+* Azure [Function](https://azure.microsoft.com/en-gb/services/functions/)
+* [azure-functions-in-practice](https://www.troyhunt.com/azure-functions-in-practice/)
+* [ExploringAzureFunctions](https://www.hanselman.com/blog/WhatIsServerlessComputingExploringAzureFunctions.aspx)
+* [MSDN Artice](https://visualstudiomagazine.com/articles/2017/04/01/azure-functions.aspx)
+
+
 # Azure Resource Manager / ARM
 
  * [Azure Resource Manager Overview](https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/)
