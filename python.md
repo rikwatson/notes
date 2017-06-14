@@ -2,6 +2,20 @@
 
 Even has [it's own](http://taoofmac.com/space/dev/Python/Grimoire) [grimoire](./words.md)
 
+## Installation
+
+Python is already installed on macOS (Only V2.7 though). There are a couple of essentialls though
+
+```bash
+sudo easy_install pip
+sudo -H pip install virtualenv
+```
+
+## Embedding in iOS
+
+ * [Python Apple Support](https://github.com/pybee/Python-Apple-support)
+ * [](https://pybee.org/project/using/ios-app/)
+
 ## Split a list
 
 ```python
