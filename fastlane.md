@@ -17,7 +17,7 @@ xcode-select --install
 
 ### Install from a download
 
-[here](https://download.fastlane.tools)
+[here](https://download.fastlane.tools) and then update via `fastlane update_fastlane`.
 
 Just ignore all the cruff below about using homebrew etc as an SSL issue with Apple / Perl will cause you pain.
 
