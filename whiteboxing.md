@@ -1,7 +1,8 @@
-# Building Apps from Powershell for different clients (Whiteboxing)
+# Whiteboxing
 
- * Whiteboxing  
-   Having multiple applications build from a single code base where the only difference is the branding
+>  Having multiple applications build from a single code base where the only difference is the branding
+
+# Building Apps from Powershell for different clients
 
 Q: Do we need `devenv` or will `msbuild` do?  
 A; Let's hope for `msbuild` - faster, easier to use in a CI environment. It's not like we have big DB or anything.
@@ -9,8 +10,6 @@ A; Let's hope for `msbuild` - faster, easier to use in a CI environment. It's no
 ```bat
 rd .\BuildResults /S /Q
 md .\BuildResults
-
-
 
 REM set msBuildDir=%WINDIR%\Microsoft.NET\Framework\v3.5
 set msBuildDir=%WINDIR%\Microsoft.NET\Framework\v4.0.30319
