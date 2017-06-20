@@ -1,5 +1,7 @@
 # XML
 
+ * Converting [XML to JSON](./xml2json.md)
+ 
 ## XSD Generation
 
   * [XSD/XML Schema Generator](http://www.freeformatter.com/xsd-generator.html#ad-output)
