@@ -57,3 +57,91 @@ If you're done before X-Mas and understood all of it, you're good. The informati
  * https://github.com/Shopify/go-lua
  * https://github.com/yuin/gopher-lua
  * https://otm.github.io/2015/07/embedding-lua-in-go/
+
+
+
+
+
+
+ ----
+
+
+
+Cool dev. tool [http://twolivesleft.com/Codea/](Here).
+
+# Moonshine
+
+[Moonshine](http://moonshinejs.org/) is a lightweight JavaScript VM for compiled LUA byte code.
+
+To try Moonshine
+
+# Install some stuff
+
+```bash
+brew install lua
+brew install node
+npm install -g moonshine
+```
+
+# Create a Hello Word Program in Lua
+
+## hello.lua
+
+```lua
+print 'Hello, World.'
+```
+
+Use [Moonshine](http://moonshinejs.org/) to compile `hello.lua` to bytecode (Called distilling)
+
+```bash
+moonshine distil hello.lua
+File created: hello.lua.json
+```
+
+[Download](http://moonshinejs.org/download) Moonshine VM
+
+# Load bytecode (JSON) into static web-site
+
+```html
+<html>
+	<head>
+		<script src="./js/moonshine.js"></script>
+		<script>
+			var vm = new shine.VM();
+			vm.load('./lua/hello.lua.json');
+		</script>
+	</head>
+	<body>
+	⋮
+	</body>
+</html>
+```
+
+# A more complex example
+
+## light-seconds.lua
+
+```lua
+local lightSeconds = distanceToMoon / speedOfLight
+log('It takes '..lightSeconds..' seconds for light to travel from the Moon.')
+```
+
+## index.html (Partial)
+
+```html
+<script src="./js/moonshine.js"></script>
+<script>
+        var vm, env;
+
+        env = {
+                speedOfLight: 299792458,
+                distanceToMoon: 384400000,
+                log: function log (message) {
+                        console.log('Message from Lua: ' + message);
+                }
+        };
+
+        vm = new shine.VM(env);
+        vm.load('./lua/light-seconds.lua.json');
+</script>
+```
