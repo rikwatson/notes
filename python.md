@@ -64,3 +64,14 @@ for infile in sys.argv[1:]:
 		except IOError:
 			print "cannot create thumbnail for", infile
 ```
+
+## Basic XML DOM parsing
+
+```python
+from xml.dom.minidom import parse
+
+dom = parse("foo.xml") # or dom = parseString( "<myxml>Some data <empty/> some more data</myxml>" )
+
+for node in dom.getElementsByTagName('bar'):  # visit every node <bar />
+    print node.toxml()
+```
