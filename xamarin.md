@@ -4,6 +4,7 @@ Formally a `.net` / `mono` company, now owned by Microsoft.
 
 Basically a cross platform technology to allow `.net` technology to be used on iOS and Android.
 
+ * [Xamarin Forms / JavaScript Interaction](./xamarin.javascript.md)
  * [Build Cross-Platform Android and iOS UIs with Xamarin Forms](https://www.sitepoint.com/build-cross-platform-android-ios-uis-xamarin-forms/)
 
 ## Build Issues with Visual Studio when Cross Compiling with a Mac
