@@ -1,6 +1,6 @@
 # Lua
 
-.. is a simple programming language liked by people such as [The Cult of Mac](http://taoofmac.com/space/dev/Lua).
+.. is a simple programming language liked by people such as [The Tao of Mac](http://taoofmac.com/space/dev/Lua).
 
 Embed in [C#](./csharp) via [nlua.org](http://nlua.org/)
 
@@ -57,11 +57,6 @@ If you're done before X-Mas and understood all of it, you're good. The informati
  * https://github.com/Shopify/go-lua
  * https://github.com/yuin/gopher-lua
  * https://otm.github.io/2015/07/embedding-lua-in-go/
-
-
-
-
-
 
  ----
 
