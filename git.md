@@ -32,7 +32,7 @@ git config user.email "rik@plancd.com"
 ```bash
 git init
 git Add -A
-git commit -m "Initial commit
+git commit -m "Initial commit"
 git remote add origin get@github.com:rikwatson/repo-name.git
 git push -u origin master
 # Do some real work.
