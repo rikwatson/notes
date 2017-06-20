@@ -1,7 +1,8 @@
 # Android
 
  * [Using Docker for Android Testing](./docker.android.md)
- * [Device Fragmentation](./android.fragmentation.md) & the developer
+ * [Device fragmentation](./android.fragmentation.md) & the developer
+
 ----
 
 # In Camera
