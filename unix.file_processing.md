@@ -4,14 +4,6 @@
  * Unix [Tools](./unix.tools.md)
  * Unix [Bash](./unix.bash.md)
 
-### Extract filename etc
-
-```bash
-filename=$(basename "$fullfile")
-extension="${filename##*.}"
-filename="${filename%.*}"
-```
-
 ### Remove all blank lines
 
 ```bash
@@ -23,6 +15,26 @@ grep '.'
 ```bash
 cat -s # Remove single blank lines
 ```
+
+### Remove leading spaces
+
+```bash
+create_stream |  sed -e 's/^[ \t]*//' | consume_stream
+```
+
+### Pretty Print XML
+
+```bash
+echo '<root><foo a="b">lorem</foo><bar value="ipsum" /></root>' | \
+    python -c 'import sys;import xml.dom.minidom;s=sys.stdin.read();print xml.dom.minidom.parseString(s).toprettyxml()'
+```
+
+### Remove empty lines
+
+```bash
+create_stream | awk 'NF' | consume_stream
+```
+
 
 ### grep
 

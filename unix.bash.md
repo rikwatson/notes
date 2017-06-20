@@ -21,6 +21,14 @@
 cd $(dirname "$0")
 ```
 
+## Extract filename etc
+
+```bash
+filename=$(basename "$fullfile")
+extension="${filename##*.}"
+filename="${filename%.*}"
+```
+
 ## Alias's
 
 ```bash

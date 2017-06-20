@@ -123,7 +123,9 @@ OS-X diff is called Filemerge (From the command line), c.f. `xcode`.
 
 This is what `du -sk * | sort -nr` shows in work area.
 
+```bash
 du --max-depth=1
+```
 
 [more](http://www.linfo.org/du.html)
 
@@ -143,7 +145,7 @@ Using GNU screen (/usr/bin/screen) in ReadyNAS by tweaker � Fri Nov 21, 2008 9
 	(optional: 4. adjust /etc/screenrc to fit you needs)
 	Caution: I'm still unsure, if step 3 is enough once or if it has to be done on every reboot.
  
-----
+
 # `ssh`
 ## Using ssh in webOS
 
