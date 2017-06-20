@@ -124,23 +124,15 @@ app.on('ready', function() {
  * [Electron Packager](https://github.com/electron-userland/electron-packager)
  * [Electron Builder](https://github.com/loopline-systems/electron-builder)
 
-### Under Windows
-
-```
-   1 git clone https://github.com/electron/electron-quick-start
-   2 cd .\electron-quick-start\
-   3 ls
-   4 npm install
-   5 find . -name render.js
-   6 find . -name renderer.js
-   7 vim .\renderer.js
-
-  10 npm start
-  11 npm start
-  12 npm start
-  13 npm start
-  14 electron-packager .
-  15 npm install -g electron-windows-store
+```bash
+git clone https://github.com/electron/electron-quick-start
+cd ./electron-quick-start/
+npm install
+find . -name renderer.js
+vim ./renderer.js
+npm start
+electron-packager .
+npm install -g electron-windows-store
 ```
 
 ### Drag & Drop Support
