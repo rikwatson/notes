@@ -1,4 +1,4 @@
-# Whiteboxing
+# White Labeling
 
 >  Having multiple applications build from a single code base where the only difference is the branding
 

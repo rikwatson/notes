@@ -10,5 +10,5 @@
    The essence of the serverless trend is the absence of the server concept during software development
  * TSL  
    Transport Security Layer
- * Whiteboxing  
+ * White Labeling   
    Having multiple applications build from a single code base where the only difference is the branding
