@@ -107,3 +107,27 @@ An Ajax [example](http://log4javascript.org/demos/ajax.html).
 
 [StackOverflow](http://stackoverflow.com/questions/2825640/log-client-side-errors-to-the-server) example.
 
+# Toggle Visibility - Show/Hide Anything
+
+One piece of javascript code that I use very frequently is a function that basically toggles the visibility of an element e.g. click, show, click, hide.
+
+```html
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none'
+           else
+              e.style.display = 'block'
+        }
+//-->
+</script>
+```
+
+Simply paste the above snippet of code underneath your <body> tag and you call it by passing to it the ID of the element you wish to toggle the visibility of (this element can be anything that takes an id attribute). For example
+
+```html
+<a href="#" onclick="toggle_visibility('foo');">Click here to toggle visibility of element #foo</a>
+<div id="foo">This is foo</div>
+```
