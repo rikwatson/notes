@@ -1,4 +1,4 @@
-# YAML: Yet Another Markup Language"
+# YAML: Yet Another Markup Language
 
 A superset of [JSON](./json.md), with comments! Also see [TOML](./toml.md)
 
