@@ -80,6 +80,13 @@ else
 fi
 ```
 
+## What's my (external) IP address ?
+
+```bash
+curl -s -H 'Accept: application/json' ipinfo.io \
+      | fgrep  '"ip":'                          \
+       | tr -dc '[0-9].'
+```
 ----
 
 ### File name extraction
