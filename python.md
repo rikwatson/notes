@@ -2,6 +2,12 @@
 
 Even has [it's own](http://taoofmac.com/space/dev/Python/Grimoire) [grimoire](./words.md)
 
+ * V2.7 or V3
+ * [Pip](./python.pip.md), virtualenv and all that.
+ * Working with [macOS](./python.macos.md)
+ * Serverless with [Chalice](./python.chalice.md)
+
+
 ## Installation
 
 Python is already installed on macOS (Only V2.7 though). There are a couple of essentialls though
