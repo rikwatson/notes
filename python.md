@@ -5,6 +5,7 @@ Even has [it's own](http://taoofmac.com/space/dev/Python/Grimoire) [grimoire](./
  * V2.7 or V3
  * [Pip](./python.pip.md), virtualenv and all that.
  * Working with [macOS](./python.macos.md)
+ * Manipulating [Excel](./python.excel.md)
  * Serverless with [Chalice](./python.chalice.md)
 
 
