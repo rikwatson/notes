@@ -16,13 +16,15 @@ List of homebrew components installed as part of my standard Mac build
 jq
 fastlane
 httpie
+python3
+carthage
+node
+wget
+xcpretty
 ```
 
-   * brew install carthage
-   * brew install wget
-   * brew install node
+   * brew install ....
 
-   xcpretty
 
    {% gist e051780b29cf1404eee97ea923118ce0 %}
 
