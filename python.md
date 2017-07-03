@@ -86,3 +86,16 @@ dom = parse("foo.xml") # or dom = parseString( "<myxml>Some data <empty/> some m
 for node in dom.getElementsByTagName('bar'):  # visit every node <bar />
     print node.toxml()
 ```
+
+# Common code for V2 7 v3
+
+For example
+
+```python
+if sys.version_info[0] == 3:
+    # Python 3 imports.
+    from urllib.parse import urlparse, parse_qs
+else:
+    # Python 2 imports.
+    from urlparse import urlparse, parse_qs
+```

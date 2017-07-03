@@ -73,4 +73,13 @@ This is useful if you want to see what the request looks like:
 @app.route('/introspect')
 def introspect():
     return app.current_request.to_dict()
-``
+```
+
+or
+
+```python
+@app.route('/introspect',
+        methods=['POST', 'PUT'])
+def introspect():
+    return app.current_request.to_dict()
+```
