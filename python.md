@@ -7,6 +7,7 @@ Even has [it's own](http://taoofmac.com/space/dev/Python/Grimoire) [grimoire](./
  * Working with [macOS](./python.macos.md)
  * Manipulating [Excel](./python.excel.md)
  * Serverless with [Chalice](./python.chalice.md)
+ * [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 
 
 ## Installation
@@ -16,6 +17,20 @@ Python is already installed on macOS (Only V2.7 though). There are a couple of e
 ```bash
 sudo easy_install pip
 sudo -H pip install virtualenv
+```
+
+If you need Puython 3.* then use [homebrew](./homebrew.md) and do a `brew install python3`
+
+The take a [look](./python.pip.md) at how `pip` & `virtualenv` work.
+
+## Top-level script environment, `__main__` etc
+
+```python
+def main():
+	doSomething()
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## Embedding in iOS
