@@ -12,6 +12,17 @@ Inside a [virtualenv](./python.pip/md)
 pip install chalice
 ```
 
+Create AWS access resources etc
+
+```bash
+mkdir ~/.aws
+cat >> ~/.aws/config
+[default]
+aws_access_key_id=YOUR_ACCESS_KEY_HERE
+aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
+region=YOUR_REGION (such as eu-west-2, us-west-2, us-west-1, etc)
+```
+
 ```bash
 # create a virtualenv with chalice installed
 mkdir chalice-projects
