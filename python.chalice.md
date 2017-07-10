@@ -6,6 +6,8 @@ NOTE: [requirements.txt only gets picked up on initiall "chalice deploy"](https:
 
 HINT: If you're using `chalice` then it's worth installing [httpie](https://httpie.org/) (`brew install httpie` on a Mac), this gives you `http`, `put`, `get` etc as verbs on your command line.
 
+Also worth a read, creating a [thumbnail service](https://www.mschweighauser.com/create-a-thumbnail-api-service/)
+
 Inside a [virtualenv](./python.pip/md)
 
 ```bash
