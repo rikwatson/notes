@@ -14,7 +14,7 @@ Inside a [virtualenv](./python.pip/md)
 pip install chalice
 ```
 
-Create AWS access resources etc
+Create [AWS](./aws.md) access resources etc
 
 ```bash
 mkdir ~/.aws
