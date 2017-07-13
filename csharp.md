@@ -2,7 +2,9 @@
 
 Made all the more relavent by the arrival of [.Net Core](./netcore) and Visual Studio for Mac.
 
- * C#[.inferfaces](./csharp.interfaces.md)
+ * C# [Attributes](./csharp.attributes.md)
+ * C# [Inferfaces](./csharp.interfaces.md)
+ 
  
 # Resouces
 
