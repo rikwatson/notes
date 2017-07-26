@@ -17,3 +17,7 @@ So, this is once a day.
 ```html
 <meta http-equiv="refresh" content="3600">
 ```
+
+## Compatability
+
+Check via [caniuse.com](http://caniuse.com/)

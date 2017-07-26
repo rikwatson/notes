@@ -2,7 +2,7 @@
 
 Full example of BLOB inline worker:
 
-Works in Chrome and Safari - not sure about iOS.
+Works in Chrome and Safari - not sure about iOS. - yes (Via http://caniuse.com/)
 
 ```html
 <!DOCTYPE html>
