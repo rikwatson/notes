@@ -1,4 +1,6 @@
-# Webworker in javaScript
+# Webworker in JavaScript
+
+ * [Web workers without a separate Javascript file?](https://stackoverflow.com/questions/5408406/web-workers-without-a-separate-javascript-file)
 
 Full example of BLOB inline worker:
 
