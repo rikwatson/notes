@@ -17,3 +17,9 @@
 ## To Add
 
  * Gist [WebViewWithActivityIndicator.swift](https://gist.github.com/david-hosier/aa2ccf05553d3e1137c24775259e094f)
+
+**TODO**:
+
+ 1. JaveScript - Swift bridge
+ 2. Extend bridge to store K/V pairs
+ 

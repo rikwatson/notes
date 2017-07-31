@@ -2,8 +2,8 @@
 
  Also See:
 
- * JavaScript [Webworkkers](./javascript.webworkers.md)
- * JavaScript (but really you should be looking at TypeScript)
+ * JavaScript [Web workers](./javascript.webworkers.md)
+ * [JavaScript](./javascript.js) (but really you should be looking at [TypeScript](./typescript.md))
  * WebPack
  * Asm.js (or more likely webasm??? these days)
  * Web local storage etc
@@ -31,7 +31,7 @@ So, this is once a day.
 
 Check via [caniuse.com](http://caniuse.com/)
 
-# Local Storage
+## Local Storage
 
 Note: Session storage is also available (`sessionStorage`)
 
