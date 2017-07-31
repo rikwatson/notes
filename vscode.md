@@ -9,7 +9,9 @@ My default settings are:
 ```json
 // Place your settings in this file to overwrite the default settings
 {
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Default Light+",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
     "workbench.welcome.enabled": false,
 
     // Controls how folders are being reopened after a restart. Select 'none' to never reopen a folder, 'one' to reopen the last folder you worked on or 'all' to reopen all folders of your last session.
@@ -20,7 +22,6 @@ My default settings are:
 
     // Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
     "files.autoSaveDelay": 1000,
-    "git.confirmSync": false,
 
 
     // Disable IntelliSense for words.
