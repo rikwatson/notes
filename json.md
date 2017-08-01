@@ -1,8 +1,10 @@
 # JavaScript Object Notation
 
-TODO: Move examples to gists.
-
 A subset of [YAML](./yaml), no comments! (But use `JSMin`) Also see [TOML](./toml)
+
+__.c.f.__
+
+ * [jq](./jq.md) A command line tool for JSON manipulation
 
 Though, oddly enough, [not](http://timelessrepo.com/json-isnt-a-javascript-subset) [JavaScript](./javascript.md).
 
