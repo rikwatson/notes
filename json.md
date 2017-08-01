@@ -1,4 +1,4 @@
-# JaveScript Object Notation
+# JavaScript Object Notation
 
 TODO: Move examples to gists.
 
