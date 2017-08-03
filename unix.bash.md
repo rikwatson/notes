@@ -86,3 +86,24 @@ function curlsource() {
 	
 curlsource https://raw.githubusercontent.com/DEADBEEF/raw
 ```
+
+## Yes / No input
+
+```bash
+#!/bin/bash
+
+read -p "yes or no: " RESPONSE
+
+case "$RESPONSE" in
+  yes|y|Yes|Y)
+    echo "blah is yes"
+    ;;
+  no|n|No|N)
+    echo "blah is no"
+    ;;
+  *)
+    echo "You need to say yes or no, start over!"
+    exit 1
+    ;;
+esac
+```
