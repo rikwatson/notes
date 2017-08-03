@@ -9,9 +9,29 @@ How to convert *app to *ipa
 3. Zip up the Payload folder using normal compression
 4. Then rename the file with a .ipa extension
 
+Gist [create_ipa.sh](https://gist.github.com/rikwatson/cb88c497790fd84a8d3cf9baea2587e4)
+
+Usage `/path/to/script/apptoipa.sh MyFabulousApp.app App\_1\_0\_45`
+
+```bash
+#!/bin/bash
+
+if [ -d "Payload" ]; then
+  rm -fr Payload/*
+else
+  mkdir Payload
+fi
+# if you'd rather copy the .app file, then replace the next line with:
+# cp -r $1 Payload
+mv $1 Payload
+zip -r $2.ipa Payload
+rm -fr Payload
+```
+
+
 How to install an `.ipa` file ...
 
-Via S3 etc.
+Via [S3](./aws.upload-to-s3.md) etc.
 
 ## Code Signing and "fastlane match".
 
