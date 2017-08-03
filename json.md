@@ -94,16 +94,3 @@ Expecting property name: line 1 column 25 (char 24)
 echo $?
 1
 ```
-
-# Usage
-
-```bash
-doSomeCommand
-
-if [ $? -eq 0 ]
-then
-  echo "Success"
-else
-  echo "Failure"
-fi
-```
