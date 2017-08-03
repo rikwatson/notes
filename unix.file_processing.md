@@ -22,6 +22,12 @@ cat -s # Remove single blank lines
 create_stream |  sed -e 's/^[ \t]*//' | consume_stream
 ```
 
+### Remove everything after first space
+
+```bash
+create_stream |  grep -o '^\S*' | consume_stream
+```
+
 ### Pretty Print XML
 
 ```bash
@@ -35,7 +41,6 @@ echo '<root><foo a="b">lorem</foo><bar value="ipsum" /></root>' | \
 create_stream | awk 'NF' | consume_stream
 ```
 
-
 ### grep
 
 ```bash
@@ -44,9 +49,9 @@ find . -exec grep -i "hi rik" '{}' /dev/null \; -print
 
 ### Use sudo with password as parameter
 
-```bash
-# The -S switch makes sudo read the password from STDIN. This means you can do
+The `-S` switch makes sudo read the password from STDIN. This means you can do:
 
+```bash
 echo mypassword | sudo -S command
 ```
 
