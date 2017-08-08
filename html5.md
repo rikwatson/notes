@@ -4,10 +4,10 @@
 
  * JavaScript [Web workers](./javascript.webworkers.md)
  * [JavaScript](./javascript.js) (but really you should be looking at [TypeScript](./typescript.md))
- * WebPack
+ * [WebPack](https://www.sitepoint.com/bundle-static-site-webpack/)
  * Asm.js (or more likely webasm??? these days)
  * Web local storage etc
- * Web Worker
+ * Progressive Web Apps [PWA](./html5.pwa.md)
 
 ## Canonical Links
 
