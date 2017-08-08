@@ -9,6 +9,7 @@
  * Web local storage etc
  * Progressive Web Apps [PWA](./html5.pwa.md)
  * [Background Sync](https://developers.google.com/web/updates/2015/12/background-sync)
+ * [Form Validation](./html5.form-validation.md)
  * [Local Storage](./html5.localstorage.md)
 
 # Progressive enhancement Background Sync example
