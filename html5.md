@@ -8,6 +8,28 @@
  * Asm.js (or more likely webasm??? these days)
  * Web local storage etc
  * Progressive Web Apps [PWA](./html5.pwa.md)
+ * [Background Sync](https://developers.google.com/web/updates/2015/12/background-sync)
+ * [Local Storage](./html5.localstorage.md)
+
+# Progressive enhancement Background Sync example
+
+It’ll be a while before all browsers support background sync, especially as Safari and Edge don’t yet support service workers. But progressive enhancement helps here:
+
+```javascript
+if ('serviceWorker' in navigator && 'SyncManager' in window) {
+  navigator.serviceWorker.ready.then(function(reg) {
+    return reg.sync.register('tag-name');
+  }).catch(function() {
+    // system was unable to register for a sync,
+    // this could be an OS-level restriction
+    postDataFromThePage();
+  });
+} else {
+  // serviceworker/sync not supported
+  postDataFromThePage();
+}
+```
+
 
 ## Canonical Links
 
@@ -30,40 +52,3 @@ So, this is once a day.
 ## Compatability
 
 Check via [caniuse.com](http://caniuse.com/)
-
-## Local Storage
-
-Note: Session storage is also available (`sessionStorage`)
-
-```javascript
-if (typeof(Storage) !== "undefined") {
-    // Code for localStorage/sessionStorage.
-} else {
-    // Sorry! No Web Storage support..
-}
-```
-
-Key value pairs, always strings at least 5Gb storage.
-
-
-```javascript
-// Store
-localStorage.setItem("lastname", "Smith");
-// Retrieve
-document.getElementById("result").innerHTML = localStorage.getItem("lastname");
-```
-
-Equivalent
-
-```javascript
-// Store
-localStorage.lastname = "Smith";
-// Retrieve
-document.getElementById("result").innerHTML = localStorage.lastname;
-```
-
-Delete via:
-
-``` javascript
-localStorage.removeItem("lastname");
-```
