@@ -8,9 +8,10 @@
  * Asm.js (or more likely webasm??? these days)
  * Web local storage etc
  * Progressive Web Apps [PWA](./html5.pwa.md)
- * [Background Sync](https://developers.google.com/web/updates/2015/12/background-sync)
+ * [Background Sync](https://developers.google.com/web/updates/2015/12/background-sync) & [ponyfoo.com](https://ponyfoo.com/articles/backgroundsync)
  * [Form Validation](./html5.form-validation.md)
  * [Local Storage](./html5.localstorage.md)
+ * The over-engineering of [ponyfoo.com](https://ponyfoo.com/articles/most-over-engineered-blog-ever)
 
 # Progressive enhancement Background Sync example
 

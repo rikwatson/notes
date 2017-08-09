@@ -134,3 +134,273 @@ Simply paste the above snippet of code underneath your <body> tag and you call i
 <a href="#" onclick="toggle_visibility('foo');">Click here to toggle visibility of element #foo</a>
 <div id="foo">This is foo</div>
 ```
+
+
+## Shorthand
+
+###  Null, Undefined, Empty Checks Shorthand
+
+When creating new variables sometimes you want to check if the variable you’re referencing for it’s value isn’t null or undefined. I would say this is a very common check for JavaScript coders.
+
+Longhand
+```javascript
+if (variable1 !== null || variable1 !== undefined || variable1 !== '') { let variable2 = variable1; }
+```
+
+Shorthand
+
+```javascript
+let variable2 = variable1  || '';
+```
+
+Don’t believe me? Test it yourself (paste into Chrome Dev Tools and click run):
+
+```javascript
+//null value example
+let variable1 = null;
+let variable2 = variable1  || '';
+console.log(variable2);
+//output: '' (an empty string)
+
+//undefined value example
+let variable1 = undefined;
+let variable2 = variable1  || '';
+console.log(variable2);
+//output: '' (an empty string)
+
+//normal value example
+let variable1 = 'hi there';
+let variable2 = variable1  || '';
+console.log(variable2);
+//output: 'hi there'
+```
+
+2. Object Array Notation Shorthand
+
+Longhand
+
+```javascript
+let a = new Array(); a[0] = "myString1"; a[1] = "myString2"; a[2] = "myString3";
+```
+
+Shorthand
+
+```javascript
+let a = ["myString1", "myString2", "myString3"];
+```
+
+3. If true … else Shorthand
+This is a great code saver for when you want to do something if the test is true, else do something else by using the ternary operator.
+
+Longhand:
+
+```javascript
+let big;
+if (x > 10) {
+    big = true;
+}
+else {
+    big = false;
+}
+```
+
+Shorthand:
+
+```javascript
+let big = x > 10 ? true : false;
+```
+
+If you rely on some of the weak typing characteristics of JavaScript, this can also achieve more concise code. For example, you could reduce the preceding code fragment to this:
+
+```javascript
+let big = (x > 10);
+//further nested examples
+let x = 3,
+big = (x > 10) ? "greater 10" : (x < 5) ? "less 5" : "between 5 and 10";
+console.log(big); //"less 5"
+let x = 20,
+big = {true: x>10, false : x< =10};
+console.log(big); //"Object {true=true, false=false}"
+```
+
+### Declaring variables Shorthand
+I think this one is the most used abroad the community, even though we know that javascript uses hoist to your variable declaration. It’s a nice pattern declare all the variables at the top and inline.
+
+Longhand:
+
+```javascript
+let x;
+let y;
+let z = 3;
+```
+
+Shorthand:
+
+```javascript
+let x, y, z=3;
+```
+
+### Assignment Operators Shorthand
+
+Assignment operators are used to assign values to JavaScript variables and no doubt you use arithmetic everyday without thinking (no matter what programming language you use Java, PHP, C++ it’s essentially the same principle).
+
+Longhand:
+
+```javascript
+x=x+1;
+minusCount = minusCount - 1;
+y=y*10;
+```
+
+Shorthand:
+
+```javascript
+x++;
+minusCount --;
+y*=10;
+```
+
+Other shorthand operators, given that x=10 and y=5, the table below explains the assignment operators:
+
+```javascript
+x += y //result x=15
+x -= y //result x=5
+x *= y //result x=50
+x /= y //result x=2
+x %= y //result x=0
+```
+
+### RegExp Object Shorthand
+
+Example to avoid using the RegExp object.
+
+Longhand:
+
+```javascript
+var re = new RegExp("\d+(.)+\d+","igm"),
+result = re.exec("padding 01234 text text 56789 padding");
+console.log(result); //"01234 text text 56789"
+```
+
+Shorthand:
+
+```javascript
+var result = /d+(.)+d+/igm.exec("padding 01234 text text 56789 padding");
+console.log(result); //"01234 text text 56789"
+```
+
+### If Presence Shorthand
+
+This might be trivial, but worth a mention. When doing “if checks” assignment operators can sometimes be ommited.
+
+Longhand:
+
+```javascript
+if (likeJavaScript === true)
+```
+
+Shorthand:
+
+```javascript
+if (likeJavaScript)
+```
+
+Here is another example. If “c” is NOT equal to true, then do something.
+
+Longhand:
+
+```javascript
+let c;
+if ( c!= true ) {
+// do something...
+}
+```
+
+Shorthand:
+
+```javascript
+let c;
+if ( !c ) {
+// do something...
+}
+```
+
+### Function Variable Arguments Shorthand
+
+Object literal shorthand can take a little getting used to, but seasoned developers usually prefer it over a series of nested functions and variables. You can argue which technique is shorter, but I enjoy using object literal notation as a clean substitute to functions as constructors.
+
+Longhand:
+
+```javascript
+function myFunction( myString, myNumber, myObject, myArray, myBoolean ) {
+    // do something...
+}
+myFunction( "String", 1, [], {}, true );
+```
+
+Shorthand (looks long but only because I have console.log’s in there!):
+
+```javascript
+function myFunction() {
+    console.log( arguments.length ); // Returns 5
+    for ( i = 0; i < arguments.length; i++ ) {
+        console.log( typeof arguments[i] ); // Returns string, number, object, object, boolean
+    }
+}
+myFunction( "String", 1, [], {}, true );
+```
+
+### charAt() Shorthand
+You can use the eval() function to do this but this bracket notation shorthand technique is much cleaner than an evaluation, and you will win the praise of colleagues who once scoffed at your amateur coding abilities!
+
+Longhand:
+
+```javascript
+"myString".charAt(0);
+```
+
+Shorthand:
+
+```javascript
+"myString"[0]; // Returns 'm'
+```
+
+### Short function calling
+
+Just like #1 you can use ternary operators to make function calling shorthand based on a conditional.
+
+Longhand:
+
+```javascript
+function x() {console.log('x')};function y() {console.log('y')};
+let z = 3;
+if (z == 3) 
+{
+    x();
+} else {
+    y();
+}
+```
+
+Shorthand:
+
+```javascript
+function x() {console.log('x')};function y() {console.log('y')};let z = 3;
+(z==3?x:y)(); // Short version!
+```
+
+### Decimal base exponents
+
+You may have seen this one around it’s essentially a fancy way to write without the zeros. 1e7 essentially means 1 followed by 7 zeros — it represents a decimal base (JS interprets as a float type) equal to 10,000,000.
+
+Longhand:
+
+```javascript
+for (let i = 0; i < 10000; i++) {
+```
+
+Shorthand:
+
+```javascript
+for (let i = 0; i < 1e4; i++) {
+```
