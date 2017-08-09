@@ -4,6 +4,7 @@ A subset of [YAML](./yaml), no comments! (But use `JSMin`) Also see [TOML](./tom
 
 __.c.f.__
 
+ * [JSON Web Token (JWT)](./json.jwt.md)
  * [jq](./jq.md) A command line tool for JSON manipulation
 
 Though, oddly enough, [not](http://timelessrepo.com/json-isnt-a-javascript-subset) [JavaScript](./javascript.md).

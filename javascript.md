@@ -8,7 +8,7 @@ _Cf._
  * [Snippets](http://www.webcodr.com/6/15-javascript-snippets-you-cant-live-without/) 15 Snippets you can't live without
  * [SOAP](http://www.guru4.net/articoli/javascript-soap-client/demo/en.aspx) Demo of using SOAP with JS
  * [Images](http://www.cryer.co.uk/resources/javascript/script3.htm) How to control the load order
-
+ * [JWT](./json.jwt.md)
 
 # Frameworks
 
