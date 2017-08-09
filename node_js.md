@@ -31,3 +31,9 @@ a cli but it isn't run.
 
  
 [highlight]: https://github.com/isagalaev/highlight.js
+
+## Embedding in iOS
+
+  * [Making of Peerflix for iOS](https://medium.com/@siuying/making-of-peerflix-for-ios-or-how-to-embed-any-nodejs-app-in-ios-app-36074f18ee3d)
+  * [jxcore.com/tech](http://jxcore.com/tech/) & [jxcore.com/downloads/](http://jxcore.com/downloads/)
+  * Gitub [peerflix-ios](https://github.com/siuying/peerflix-ios)
