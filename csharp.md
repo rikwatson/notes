@@ -4,6 +4,8 @@ Made all the more relavent by the arrival of [.Net Core](./netcore) and Visual S
 
  * C# [Attributes](./csharp.attributes.md)
  * C# [Inferfaces](./csharp.interfaces.md)
+ * C# [Scripting](./csharp.scripting.md)
+ 
  
  
 # Resouces
