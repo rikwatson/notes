@@ -62,11 +62,19 @@ curl -s -H 'Accept: application/json' ipinfo.io \
 
 ### File name extraction
 
-{% gist 405c13943dff1f6410c35ad01cc4559b %}
+```bash
+filename=$(basename "$fullfile")
+extension="${filename##*.}"
+filename="${filename%.*}"
+```
 
 
 ### Run in same directory
 
-{% gist 16500c65c387daf03b383a721539b898 %}
+```bash
+#! /bin/bash
+#
+cd $(dirname "$0")
+```
 
 But this won't work if there are spaces in the directory spec.
