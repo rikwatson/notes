@@ -4,6 +4,7 @@ _c.f._
 
  * [AWS](./aws_device_farm.md)
  * [Serverless](./serverless.md)
+ * Azure [Function](./azure.functions.md)
 
 Azure in [Plain English](https://www.expeditedssl.com/azure-in-plain-english)
 
