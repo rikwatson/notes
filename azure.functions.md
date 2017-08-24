@@ -1,6 +1,8 @@
 # Azure Functions
 
-Once I sort this assembly upoad Net4.6 thing out we should be able to have some fun.
+Once I sort this assembly upload Net4.6 thing out we should be able to have some fun.
+
+MS's [main site](https://azure.microsoft.com/en-us/services/functions/)
 
 See [here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp) for details on this.
 
