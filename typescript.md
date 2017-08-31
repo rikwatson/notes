@@ -10,6 +10,12 @@ Nice [introduction](https://toddmotto.com/typescript-the-missing-introduction)
 
 A [JavaScript](./javascript) pre-compiler from Microsoft, excellent [Channel 9](https://channel9.msdn.com/posts/Anders-Hejlsberg-Introducing-TypeScript) video from Anders Hejlsberg.
 
+## Related Tooling
+
+ * [browserify](http://browserify.org/) for the `require` method.
+
+## JSX
+
 Some `TypeScript` with some embedded `JSX`.
 
 ```typescript
