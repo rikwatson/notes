@@ -44,7 +44,41 @@ Details, [here](https://developer.xamarin.com/guides/ios/getting_started/install
 
 ----
 
+# A couple ways to submit (publish, upload) a Visual Studio Xamarin.iOS app to the App Store
 
+## Option 1: upload an IPA created via the "Build Adhoc IPA" command
+
+1. Pick the "Ad-Hoc" build configuration.
+
+2. Change the provisioning profile in "project options -> iOS Bundle Signing" to an AppStore provisioning profile.
+
+3. Rebuild the project.
+
+4. Select "Tools -> iOS -> Publish iOS App". This will build the IPA and then automatically open Application Loader on the Mac build host and show the generated IPA.
+
+5. Submit the IPA via Application Loader.
+
+
+## Option 2: upload a zipped .app bundle
+
+1. Pick the "AppStore", "iPhone" build configuration.
+
+2. Double-check that the provisioning profile in "project options -> iOS Bundle Signing" is an AppStore provisioning profile.
+
+3. Rebuild the project. Then press the "Start" button to perform the remote build step and attempt to deploy to device. Note that the deploy will fail because the provisioning profile is not intended for this usage.
+
+4. Find the resulting `.app` bundle in the build cache folder on the Mac build host:
+  ```
+  ~/Library/Caches/Xamarin/mtbs/builds/YourAppName/{project-guid}/output/Release/iPhone/YourAppName.app
+  ```
+
+5. Zip up the `.app` bundle, for example by running the following command in Terminal.app:
+  ```
+  zip -r YourAppName.app.zip YourAppName.app
+  ```
+
+6. Open Application Loader, click the "Deliver Your App" button, and select the `.app.zip` file when prompted.
+----
 
 ## React
 
