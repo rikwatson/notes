@@ -45,6 +45,7 @@ ng build --prod --aot
 ```bash
 ng build --prod --aot
 ng build --prod --aot --output-path="path/to/folder" --output-hashing=none
+ng build --prod --aot --output-path=../host/host/wwwroot --output-hashing=none --base-href .
 ```
 
 ## Links
