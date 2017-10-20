@@ -5,11 +5,16 @@ differing projects.
 
 ## Links
 
- * [Blockly]() The main site
+ * Introduction to [Blockly](https://developers.google.com/blockly/guides/overview)
+ * [Creating](https://developers.google.com/blockly/guides/create-custom-blocks/overview) custom blocks
  * Blockly Developer Tools
-   * {Docs](https://developers.google.com/blockly/guides/create-custom-blocks/blockly-developer-tools)}
+   * [Docs](https://developers.google.com/blockly/guides/create-custom-blocks/blockly-developer-tools)}
    * [Site](https://blockly-demo.appspot.com/static/demos/blockfactory/index.html), use blockly to create blocks
    * Usage [video](https://www.youtube.com/watch?v=s2_xaEvcVI0)
+
+Blockly 'programs' are represented by a [xml structure](./blockly.xml-structure.2015.pdf) (NOTE: missing at least shadow blocks and variables)
+
+Blockly API [Workshop](blockly.api-workshop.pptx) (The Noughts & Crosses Example)
 
 ## The Toolbox
 
