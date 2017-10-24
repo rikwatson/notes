@@ -10,10 +10,56 @@
 
 Although I've created XSD's from grammers for most basic XML schema's it's actually easier to create an XSD manually from scratch!
 
-Start with an XSD which will allow any (valid) XML
+Start with an XSD which will allow any (valid) XML for a specified root (`<root\>`) - **XML Schema can't specify that a document is valid regardless of its content**
 
 ```xml
-</xsd>
+<xs:element name="parameter" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+    <xs:sequence>
+        <xs:any processContents="skip" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+    <xs:attribute type="xs:string" name="value" use="optional"/>
+</xs:complexType>
+```
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root"/>
+</xs:schema>
+```
+
+Which can be expanded into:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+
+## Script to validate XML agaist an XSD
+
+```bash
+#!/bin/bash
+#
+# `xmllint --noout --schema XSD_FILE XML_FILE`
+#
+xmllint --noout --schema Config.xsd ./test_xml/a.XML
+xmllint --noout --schema Config.xsd ./test_xml/b.XML
+
+echo "Find..."
+
+
+find ./test_xml -name "*.xml" -exec xmllint --noout --schema Config.xsd {} \;
 ```
 
 ----
