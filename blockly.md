@@ -18,7 +18,7 @@ It is extensible in a way that allows extra 'blocks' (wiith their own semantics)
  * Introduction to [Blockly](https://developers.google.com/blockly/guides/overview)
  * [Creating](https://developers.google.com/blockly/guides/create-custom-blocks/overview) custom blocks
  * Blockly Developer Tools
-   * [Docs](https://developers.google.com/blockly/guides/create-custom-blocks/blockly-developer-tools)}
+   * [Docs](https://developers.google.com/blockly/guides/create-custom-blocks/blockly-developer-tools)
    * [Site](https://blockly-demo.appspot.com/static/demos/blockfactory/index.html), use blockly to create blocks
    * Usage [video](https://www.youtube.com/watch?v=s2_xaEvcVI0)
 
