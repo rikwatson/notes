@@ -51,4 +51,4 @@ Blockly API [Workshop](blockly.api-workshop.pptx) (The Noughts & Crosses Example
 1. Use the online [Blockly Developer Tools](https://blockly-demo.appspot.com/static/demos/blockfactory/index.html) provided by Google to create blocks. It's good for all but the most complicated of blocks and is significantly faster to use
 than hand coding. Also save as JavaScript, not JSON as you can the perform JS injection etc (if necessary). 
 
-2. When using the designed make a note of the URL given in the 'link' icon ![](./blockly.link.jpg) - store this with the code as it is then possible to go back to the online designe to tweak the code.
+2. When using the designed make a note of the URL given in the 'link' icon ![](./blockly.link.jpg) - store this with the code as it is then possible to go back to the online design to tweak the code.
