@@ -7,12 +7,12 @@
 
 ## Examples
 
-Note: The blocks are described using JSON and loaded separately. XML is only used for storing user's code and only includes the values that the user can modify (including the locations of blocks in the workspace).
+Note: Blocks are described using [JSON](./json.md) and loaded separately. XML is only used for storing user's code and only includes the values that the user can modify (including the locations of blocks in the workspace).
 More info on the JSON format can be found [here](https://developers.google.com/blockly/custom-blocks/json-definition?hl=en).
 
 ### Sample blocks in workspace:
 
-![](blockly.xml-structure.2015.jpg)
+![](blockly.xml-structure.jpg)
 
 ### Corresponding XML:
 
@@ -20,34 +20,34 @@ More info on the JSON format can be found [here](https://developers.google.com/b
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" x="38" y="62">
    <value name="IF0">
-          <block type="logic_boolean">
-                <field name="BOOL">TRUE</field>
-          </block>
+      <block type="logic_boolean">
+            <field name="BOOL">TRUE</field>
+      </block>
     </value>
   </block>
-  <block   type="controls_for" x="263" y="138">
-        <field   name="VAR">i</field>
-        <value   name="FROM">
-              <block   type="math_number">
+  <block type="controls_for" x="263" y="138">
+        <field name="VAR">i</field>
+        <value name="FROM">
+              <block type="math_number">
                     <field name="NUM">1</field>
               </block>
         </value>
-        <value   name="TO">
-              <block   type="math_number">
+        <value name="TO">
+              <block type="math_number">
                     <field name="NUM">10</field>
               </block>
         </value>
-        <value   name="BY">
-              <block   type="math_number">
+        <value name="BY">
+              <block type="math_number">
                     <field name="NUM">1</field>
               </block>
         </value>
-        <statement   name="DO">
-              <block   type="text_print">
-                    <value   name="TEXT">
-                          <block   type="text_length">
-                                <value   name="VALUE">
-                                      <block   type="text">
+        <statement name="DO">
+              <block type="text_print">
+                    <value name="TEXT">
+                          <block type="text_length">
+                                <value name="VALUE">
+                                      <block type="text">
                                             <field name="TEXT">Sample text</field>
                                       </block>
                                 </value>
@@ -56,11 +56,11 @@ More info on the JSON format can be found [here](https://developers.google.com/b
               </block>
         </statement>
         <next>
-              <block   type="variables_set">
-                    <field   name="VAR">item</field>
-                    <value   name="VALUE">
-                          <block   type="math_number">
-                                <field   name="NUM">137</field>
+              <block type="variables_set">
+                    <field name="VAR">item</field>
+                    <value name="VALUE">
+                          <block type="math_number">
+                                <field name="NUM">137</field>
                           </block>
                     </value>
                 </block>
