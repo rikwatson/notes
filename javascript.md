@@ -10,6 +10,8 @@ _Cf._
  * [Images](http://www.cryer.co.uk/resources/javascript/script3.htm) How to control the load order
  * [JWT](./json.jwt.md)
 
+ * A JS Build [setup](http://marijnhaverbeke.nl/blog/my-babel-setup.html), rather clever with a FUSE compiling file system.
+
 # Frameworks
 
  * [SproutCore](http://www.sproutcore.com/demos/)
