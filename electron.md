@@ -9,6 +9,10 @@ Don't forget that people are using [Python](/.python.md) alongside Electron:
  * Reddit: [Embedding Python in Electron](https://www.reddit.com/r/Python/comments/3qqz9m/embedding_python_in_electron/)
  * [Rodeo](https://github.com/yhat/rodeo), A data science IDE for Python
 
+ * [Mac App Store Submission Guide](https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md)
+ * [Releasing an Electron app on the Mac App Store](https://medium.com/@flaqueEau/releasing-an-electron-app-on-the-mac-app-store-c32dfcd9c2bd)
+ * [Packaging and Submitting an Electron App to the Mac App Store](https://github.com/electron-userland/electron-osx-sign/wiki/Packaging-and-Submitting-an-Electron-App-to-the-Mac-App-Store)
+
 ## Overview
 
 `Electron` is the html/JavaSript container used by `Atom`, `Visual Studio Code`, `Slack` etc. It can be used to create MAS (Mac App Store) apps.
