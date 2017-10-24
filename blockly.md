@@ -43,7 +43,7 @@ Blockly API [Workshop](blockly.api-workshop.pptx) (The Noughts & Crosses Example
 </xml>
  ```
 
- [Dynamic](https://developers.google.com/blockly/guides/configure/web/toolbox#dynamic_categories) toolbox entrcategoriesies are also supported (Which are calculated everytime the specified category is opened)
+ [Dynamic](https://developers.google.com/blockly/guides/configure/web/toolbox#dynamic_categories) toolbox categories are also supported (Which are calculated everytime the specified category is opened) or via `workspace.updateToolbox(newTree)`
 
 
 ## Notes for developers
@@ -52,3 +52,34 @@ Blockly API [Workshop](blockly.api-workshop.pptx) (The Noughts & Crosses Example
 than hand coding. Also save as JavaScript, not JSON as you can the perform JS injection etc (if necessary). 
 
 2. When using the designed make a note of the URL given in the 'link' icon ![](./blockly.link.jpg) - store this with the code as it is then possible to go back to the online design to tweak the code.
+
+## Importing & Exporting XML
+
+```javascript
+//define your variable:
+var XMLCodeMirror = CodeMirror.fromTextArea($('#your textarea').get(0));
+
+//loading from the textbox      
+$('#button name').click(function() {
+    var toload = XMLCodeMirror.getValue();
+
+    var success = loadxml(toload);
+});
+
+function loadxml(xml) {
+    if (typeof xml != "string" || xml.length < 5) {
+        alert("No Input");
+        return false;
+        return;
+    }
+    try {
+        var dom = Blockly.Xml.textToDom(xml);
+        Blockly.mainWorkspace.clear();
+        Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, dom);
+        return true;
+    } catch (e) {
+        alert("Invalid xml");
+        return false;
+   }
+}
+```
