@@ -209,6 +209,8 @@ As for the list of block names, value names, and field names - those are defined
 
 Initial (Empty) XML
 
+<script src="https://gist.github.com/nisrulz/11c0d63428b108f10c83.js"></script>
+
 {% gist 77c6779cfe511c88e8fd9b540440f98e %}
 
 
