@@ -1,5 +1,10 @@
 # Blockly's XML Structure
 
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
 ## TODO:
 
  * Shadow Blocks
@@ -198,3 +203,88 @@ xml - wrapper for the save file
 ```
 
 As for the list of block names, value names, and field names - those are defined by the set of blocks being used and are different for every use of Blockly. The Blocks we provide in the core library are a mix of common blocks and sample blocks to test functionality, so I wouldn't recommend using them as a definitive set.
+
+
+----
+
+Initial (Empty) XML
+
+{% gist 77c6779cfe511c88e8fd9b540440f98e %}
+
+
+
+```xml
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+</xml>
+```
+
+A couple of variables
+
+```xml
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="qG)aLzQ+r9x_Q*NXwO5Y">A</variable>
+    <variable type="" id="4#,U.:RY^7rz,jrpYn]d">second variable</variable>
+  </variables>
+</xml>
+```
+
+
+A = 0 (The default)
+
+```xml
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="qG)aLzQ+r9x_Q*NXwO5Y">A</variable>
+    <variable type="" id="4#,U.:RY^7rz,jrpYn]d">second variable</variable>
+  </variables>
+  <block type="variables_set" id="]^j,n*UNh=)cit)8@e;n" x="-737" y="-562">
+    <field name="VAR" id="qG)aLzQ+r9x_Q*NXwO5Y" variabletype="">A</field>
+    <value name="VALUE">
+      <block type="math_number" id="7ws%;R-$6~JsHmJ?NA5l">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+</xml>
+```
+
+A = 42
+
+```xml
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="qG)aLzQ+r9x_Q*NXwO5Y">A</variable>
+    <variable type="" id="4#,U.:RY^7rz,jrpYn]d">second variable</variable>
+  </variables>
+  <block type="variables_set" id="]^j,n*UNh=)cit)8@e;n" x="-737" y="-562">
+    <field name="VAR" id="qG)aLzQ+r9x_Q*NXwO5Y" variabletype="">A</field>
+    <value name="VALUE">
+      <block type="math_number" id="7ws%;R-$6~JsHmJ?NA5l">
+        <field name="NUM">42</field>
+      </block>
+    </value>
+  </block>
+</xml>
+```
+
+
+A shadow block
+
+```xml
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="qG)aLzQ+r9x_Q*NXwO5Y">A</variable>
+    <variable type="" id="4#,U.:RY^7rz,jrpYn]d">second variable</variable>
+  </variables>
+  <block type="math_change" id="M75o-Yr7kT@S@lxC}*GW" x="-437" y="-487">
+    <field name="VAR" id="qG)aLzQ+r9x_Q*NXwO5Y" variabletype="">A</field>
+    <value name="DELTA">
+      <shadow type="math_number" id="hh|mKC(K9L;JogC@4hBs">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+</xml>
+```
