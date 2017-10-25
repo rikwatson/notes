@@ -35,6 +35,24 @@ _Cf._
 * [dropbox JS](http://code.google.com/p/dropbox-js/) See ./resouces/dropbox.js &
  [here](http://dropbox-js.googlecode.com/svn-history/r7/trunk/dropbox.js).
 
+# Modules / IIFE
+
+From [here](https://ponyfoo.com/books/mastering-modular-javascript/chapters/1#read).
+
+```javascript
+void function() {
+  window.mathlib = window.mathlib || {}
+  window.mathlib.sum = sum
+
+  function sum(...values) {
+    return values.reduce((a, b) => a + b, 0)
+  }
+}()
+
+mathlib.sum(1, 2, 3)
+// <- 6
+```
+
 # Twitter
 
 * [jsgoodies](https://twitter.com/#!/jsgoodies)
