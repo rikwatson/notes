@@ -15,3 +15,12 @@ The raw text for the latest 'master' for a `gist` can similarly be accessed via:
 ```
 https://gist.githubusercontent.com/user-name/DEADBEEF/raw
 ```
+
+Use [defunkt/gist](https://github.com/defunkt/gist) for a command line interface.
+
+# Example of to-do list:
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item

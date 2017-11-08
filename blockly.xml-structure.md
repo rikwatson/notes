@@ -1,9 +1,5 @@
 # Blockly's XML Structure
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
 
 ## TODO:
 
@@ -160,9 +156,9 @@ A single block and its descendents can be nested inside a value tag.
 
 #### Next attributes
 
-A next tag   has   no   attributes.
+A next tag has no attributes.
 
-A   single block and   its   descendents   can   be   nested   inside   a next tag.
+A single block and its descendents can be nested inside a next tag.
 
 ### Statement
 
