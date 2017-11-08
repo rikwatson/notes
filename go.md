@@ -13,6 +13,7 @@
  * Hackernoon [articles](https://hackernoon.com/tagged/golang)
  * [Effective](https://golang.org/doc/effective_go.html) Go
  * Go [Best Proctices 2016](https://peter.bourgon.org/go-best-practices-2016/)
+ * Neugram [Briefly](https://neugram.io/blog/neugram-briefly) If you program a lot in Go, you may find Neugram interesting. [ng](https://github.com/neugram/ng)
 
 
 ## Links to amalgimate
