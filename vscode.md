@@ -1,5 +1,6 @@
 # Visual Studio Code
 
+VS Code [Can do that](http://vscodecandothat.com/)
 _c.f._
 
  * [ToM](http://taoofmac.com/space/apps/Visual%20Studio%20Code)
@@ -30,6 +31,8 @@ My default settings are:
     "editor.wordBasedSuggestions": false
 }
 ```
+
+See Gist - 5e1466108c7146ffa224f5d35e61b4a1 
 
 `<CTRL-P> ext install vscode-solarized`, then ` File > Preferences > Color Theme. (Code > Preferences > Color Theme on Mac)`
 

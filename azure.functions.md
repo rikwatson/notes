@@ -1,5 +1,7 @@
 # Azure Functions
 
+## C#
+
 Once I sort this assembly upload Net4.6 thing out we should be able to have some fun.
 
 MS's [main site](https://azure.microsoft.com/en-us/services/functions/)
@@ -18,3 +20,7 @@ So, looks like private nuget hosting isn't supported (or is non trivial), just c
  * [Azure Functions & Code Reuse](http://devslice.net/2016/08/azure-functions-reusing-code/)
  * [Use external assemblies and refer csx scripts in Azure Functions](https://integrationforever.wordpress.com/2016/06/14/use-external-assemblies-and-refer-csx-scripts-in-azure-functions/)
  * [How to add assembly references to an Azure Function App](https://blogs.msdn.microsoft.com/benjaminperkins/2017/04/13/how-to-add-assembly-references-to-an-azure-function-app/)
+
+ ## JavaScript (Or more correctly Node,js)
+
+ First read the MS Developer's Guide [site](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference) & their JavaScript Developer's [reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node)
