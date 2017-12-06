@@ -13,6 +13,12 @@
 #!/usr/bin/env bash
 ```
 
+## Update Bash profile
+
+```bash
+echo 'export PATH="/some/path:$PATH"' >> ~/.bash_profile
+```
+
 ## Run `bash` script in the directory it is in
 
 ```bash
