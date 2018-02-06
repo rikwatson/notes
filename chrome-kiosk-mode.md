@@ -1,4 +1,9 @@
-# ChomeOS Kiosk Mode
+---
+layout: post
+title:  "ChromeOS Kiosk Mode"
+categories: code web
+permalink: /chrome_kiosk_mode
+---
 
  * [Use a ChromeOS as a kiosk](https://support.google.com/chromebook/answer/3134673)
  * [kiosk_enabled](https://developer.chrome.com/apps/manifest/kiosk_enabled)

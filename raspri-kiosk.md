@@ -1,13 +1,17 @@
-# Using a Raspberry PI as Web Kiosk
+---
+layout: post
+title:  "Using a Raspberry PI as Web Kiosk"
+permalink: /rasp_pi_kiosk
+---
 
-## TODO
+# TODO
 
  * [raspi-dashboard](https://github.com/nils-werner/raspi-dashboard)
  * [ArchLinux|ARM](https://archlinuxarm.org/platforms/armv6/raspberry-pi) -> ArchLinuxARM-rpi-latest.tar.gz
  * https://www.raspberrypi.org/blog/arch-linux-arm-available-for-download/
  * 
 
-## But Wait, _cf._
+# But Wait, _cf._
 
 Chromebooks and Chromeboxes support [Kiosk Mode Apps](./chrome_kiosk_mode).
 
