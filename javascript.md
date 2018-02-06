@@ -4,6 +4,7 @@ _Cf._
 
  * [TypeScript](./typescript.md) & [ES2015](http://babeljs.io/learn-es2015/)
  * [I18N](./javascript.i18n.md)
+ * [ToM](http://taoofmac.com/space/dev/JavaScript)
 
  * [Snippets](http://www.webcodr.com/6/15-javascript-snippets-you-cant-live-without/) 15 Snippets you can't live without
  * [SOAP](http://www.guru4.net/articoli/javascript-soap-client/demo/en.aspx) Demo of using SOAP with JS
