@@ -1,6 +1,17 @@
-# Electron
+---
+layout: post
+title:  "Electron"
+categories: electron json javascript atom npm
+permalink: /electron
+---
 
-_c.f._
+
+## Overview
+
+`Electron` is the html/JavaSript container used by `Atom`, `Visual Studio Code`, `Slack` etc. It can be used to create MAS (Mac App Store) apps.
+
+
+# _c.f._
 
 Don't forget that people are using [Python](/.python.md) alongside Electron:
 
@@ -13,19 +24,16 @@ Don't forget that people are using [Python](/.python.md) alongside Electron:
  * [Releasing an Electron app on the Mac App Store](https://medium.com/@flaqueEau/releasing-an-electron-app-on-the-mac-app-store-c32dfcd9c2bd)
  * [Packaging and Submitting an Electron App to the Mac App Store](https://github.com/electron-userland/electron-osx-sign/wiki/Packaging-and-Submitting-an-Electron-App-to-the-Mac-App-Store)
 
-## Overview
 
-`Electron` is the html/JavaSript container used by `Atom`, `Visual Studio Code`, `Slack` etc. It can be used to create MAS (Mac App Store) apps.
-
-## Installation
+# Installation
 
 `npm install electron-prebuilt`
 
-## Runing
+# Runing
 
 `electron .`
 
-## References
+# References
 
  * [Quick Start](https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md)
  * [Fundamentals](http://maxogden.com/electron-fundamentals.html)
@@ -34,15 +42,15 @@ Don't forget that people are using [Python](/.python.md) alongside Electron:
 
 I've created a few `Electron` Apps which live in `$/work/*/apps/...`
 
-## Mac App Store
+# Mac App Store
 
  * [electron-osx-sign](https://github.com/electron-userland/electron-osx-sign/wiki/Packaging-and-Submitting-an-Electron-App-to-the-Mac-App-Store)
  * [Mac App Store Submission Guide](https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md)
  * [Some other notes, worth a read](http://liuhao.im/english/2016/01/25/publish-electron-app-to-mac-app-store.html)s
+ 
+# Structure
 
-## Structure
-
-```
+```text
 your-app/
 ├── package.json
 ├── main.js
@@ -128,6 +136,8 @@ app.on('ready', function() {
  * [Electron Packager](https://github.com/electron-userland/electron-packager)
  * [Electron Builder](https://github.com/loopline-systems/electron-builder)
 
+### Under Windows
+
 ```bash
 git clone https://github.com/electron/electron-quick-start
 cd ./electron-quick-start/
@@ -169,4 +179,4 @@ fs.readFile(filename, 'utf8', function (err, data) {
 }
 ```
 
-[Creat a UWP App](https://electron.atom.io/docs/tutorial/windows-store-guide/)
+[Create a UWP App](https://electron.atom.io/docs/tutorial/windows-store-guide/)
