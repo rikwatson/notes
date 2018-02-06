@@ -1,6 +1,6 @@
 # I Like Cars
 
-I like cars; As an engineer I feel I must. 
+I like cars; As an engineer I feel I must.
 
 Some cars I like include:
 
