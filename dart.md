@@ -42,3 +42,8 @@ A two part Flutter overview:
 
  * [One](https://medium.com/dartlang/zero-to-one-with-flutter-43b13fd7b354)
  * [Two](https://medium.com/dartlang/zero-to-one-with-flutter-part-two-5aa2f06655cb)
+
+Some nice Medium posts on Flutter
+
+ * [What’s Revolutionary about Flutter](https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514?imm_mid=0fbccb&cmp=em-prog-na-na-newsltr_20180303)
+ * [Why we chose Flutter and how it’s changed our company for the better](https://medium.com/@matthew.smith_66715/why-we-chose-flutter-and-how-its-changed-our-company-for-the-better-271ddd25da60?imm_mid=0fbccb&cmp=em-prog-na-na-newsltr_20180303)
