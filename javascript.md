@@ -1,4 +1,4 @@
 # JavaScript: The 'J' in AJAX
 
-See [here](http://rikwatson.github.io/javascript).
+See [here](https://rikwatson.github.io/javascript).
 

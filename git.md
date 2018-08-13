@@ -1,3 +1,3 @@
 # Git DVCS
 
-See [here](http://rikwatson.github.io/git).
+See [here](https://rikwatson.github.io/git).

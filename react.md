@@ -1,3 +1,3 @@
 # React & React Native
 
-See [here](http://rikwatson.github.io/react).
+See [here](https://rikwatson.github.io/react).

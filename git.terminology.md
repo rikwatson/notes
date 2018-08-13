@@ -1,3 +1,3 @@
 # Git Terminology
 
-See [here](http://rikwatson.github.io/git_terminology).
+See [here](https://rikwatson.github.io/git_terminology).

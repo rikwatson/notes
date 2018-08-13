@@ -1,3 +1,3 @@
 # GitHub Gists
 
-See [here](http://rikwatson.github.io/gists).
+See [here](https://rikwatson.github.io/gists).

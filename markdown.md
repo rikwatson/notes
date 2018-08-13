@@ -1,3 +1,3 @@
 # Markdown - A Simple Markup Language
 
-See [here](http://rikwatson.github.io/markdown).
+See [here](https://rikwatson.github.io/markdown).
