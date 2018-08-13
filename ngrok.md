@@ -1,6 +1,4 @@
 # ngrok
 
-Secure tunnels to localhost
-
-https://ngrok.com/
+See [here](http://rikwatson.github.io/ngrok).
 
